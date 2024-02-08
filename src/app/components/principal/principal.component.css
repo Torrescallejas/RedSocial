@@ -1,0 +1,110 @@
+section {
+    margin: 0;
+    min-height: 90vh;
+    background: #e6e2db;
+    padding-top: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    margin: 0px 15%;
+    
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor {
+    width: 70%;
+}
+
+.agregarPublicacion {
+    /* background: #ffffff; */
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.agregarPublicacion textarea{
+    resize: none;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    border: none;
+    background: #ccc8c1;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form input {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: grey;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+
+    transition: all .4s ease;
+}
+form input:hover {
+    background: rgb(158, 155, 155);
+    cursor: pointer;
+}
+
+aside {
+    width: 30%;
+}
+
+aside img {
+    width: 300px;
+}
+
+.publicaciones {
+    margin-top: 20px;
+}
+
+.publicacion {
+    margin-top: 20px;
+    padding: 10px;
+    background: #ccc8c1;
+    border-radius: 10px;
+}
+.publicacion:last-of-type {
+    margin-bottom: 30px;
+}
+
+.publicacion .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones {
+    display: unset;
+}
+.botones a {
+    margin-right: 20px;
+}
+.botones a:hover {
+    cursor: pointer;
+}
+.botones i{
+    color: black;
+    font-size: 20px;
+}
+
+.publicacion .header h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.publicacion .header p {
+    font-size: 12px;
+}
+.publicacion .texto {
+    margin-top: 10px;
+}

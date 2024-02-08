@@ -1,0 +1,36 @@
+<section>
+    <div class="main">
+        <div class="contenedor">
+            <h1>Bienvenido ya puedes navegar y agregar una publicacion!!</h1>
+            <div class="agregarPublicacion">
+                <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+                    <textarea name="descripcion" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Agregar Publicación" ngModel></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="publicaciones">
+                <div class="publicacion" *ngFor="let data of dataPublicaciones">
+                    <div class="header">
+                        <div class="info">
+                            <h3>{{data['id']}}</h3>
+                            <p>{{data['fecha']}}</p>
+                        </div>
+                        <div class="botones">
+                            <!-- <a *ngIf="data['id'] === UID"><i class='bx bx-edit'></i></a> -->
+                            <a *ngIf="data['id'] === UID" (click)="eliminarPublicacion(data['idCollection'])"><i class='bx bx-trash'></i></a>
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <p>{{data['descripcion']}}</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <aside>
+            <img src="assets/img/pizza-banner.jpg" alt="Banner">
+        </aside>
+    </div>
+</section>
